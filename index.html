@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heritage Pharmacy Dashboard</title>
+
+  <!--Google-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="logo">
+      <div class="logo-circle">HP</div>
+    </div>
+
+    <div class="brand">
+      <h1>HAMRO PHARMACY</h1>
+      <span>EXECUTIVE SUITE</span>
+    </div>
+
+    
+
+    <div class="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+
+    
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="greeting">
+      <h2>Good Morning,</h2>
+      <h3>Smarika Tripathi</h3>
+    </section>
+
+    <section class="overview">
+      <p class="section-label">DAILY OVERVIEW</p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">📄</div>
+          <div class="value">142</div>
+          <div class="label">FILLED TODAY</div>
+        </div>
+
+        <div class="card">
+          <div class="icon">📈</div>
+          <div class="value">
+            12.4<span>%</span>
+          </div>
+          <div class="label">REVENUE GROWTH</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script>
+  window.addEventListener("scroll", () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+
+    const scrollPercent = (scrollTop / scrollHeight) * 100;
+    document.getElementById("progress-bar").style.width =
+      scrollPercent + "%";
+  });
+</script>
+
+
+</body>
+</html>
